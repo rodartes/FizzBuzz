@@ -1,12 +1,15 @@
 #FizzBuzz program by rodartes
 
-for x in range(101):
+def fizzbuzz(x):
   if x % 3 == 0:
     if x % 5 == 0:
-      print("FizzBuzz");
+      print("FizzBuzz")
     else:
-      print("Fizz");
+      print("Fizz")
   elif x % 5 == 0:
     print("Buzz")
   else:
-    print(x);
+    print(x)
+
+for x in range(1, 101):
+  fizzbuzz(x)
